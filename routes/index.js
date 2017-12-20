@@ -9,9 +9,21 @@ router.get('/', function(req, res, next) {
 router.post('/get-notify', (req, res) => {
 
   const data = req.body;
-
-  res.json(data);
   console.log(data);
+  res.json(data);
+
 });
 
+router.post('/github-callback', (req, res) => {
+
+  const data = req.data;
+  console.log(data);
+  res.json(data);
+});
+
+router.post('/github-install', (req, res) => {
+  const data = req.data;
+  console.log(data);
+  res.json(data);
+});
 module.exports = router;
