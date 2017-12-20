@@ -10,7 +10,8 @@ router.post('/get-notify', (req, res) => {
 
   const data = req.body;
   console.log(data);
-  res.json(data);
+  res.render('index', { title: data });
+  // res.json(data);
 
 });
 
