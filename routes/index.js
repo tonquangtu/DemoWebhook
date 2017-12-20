@@ -22,7 +22,7 @@ router.post('/github-callback', (req, res) => {
   res.json(data);
 });
 
-router.post('/github-install', (req, res) => {
+router.get('/github-install', (req, res) => {
   const data = req.data;
   console.log(data);
   res.json(data);
