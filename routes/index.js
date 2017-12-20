@@ -23,10 +23,27 @@ router.post('/github-callback', (req, res) => {
 });
 
 router.get('/github-install', (req, res) => {
-  const data = req.data;
+  const data = req.body;
+  const query = req.query;
+  const params = req.params;
+
   console.log(data);
+  console.log(query);
+  console.log(params);
   res.json(data);
 });
+
+router.post('/github-install', (req, res) => {
+  const data = req.body;
+  const query = req.query;
+  const params = req.params;
+
+  console.log(data);
+  console.log(query);
+  console.log(params);
+  res.json(data);
+});
+
 
 router.post('/github-afterinstall', (req, res) => {
   const data = req.body;
@@ -39,4 +56,5 @@ router.post('/github-afterinstall', (req, res) => {
 
   res.json(data);
 });
+
 module.exports = router;
