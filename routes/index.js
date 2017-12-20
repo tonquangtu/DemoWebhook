@@ -27,4 +27,10 @@ router.post('/github-install', (req, res) => {
   console.log(data);
   res.json(data);
 });
+
+router.post('/github-afterinstall', (req, res) => {
+  const data = req.data;
+  console.log(data);
+  res.json(data);
+});
 module.exports = router;
